@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
   </head>
 <body>
   <header>
@@ -155,9 +157,15 @@
   </section>
 
   <section class="p-5 bg-light" id="contactme-section">
+    <div class="container">
     <h1 class="Res text-center">Contact Me</h1>
-    
-    <form>
+
+    <a href="https://wa.me/qr/SJNOH3UULANSD1"> <i class="fa fa-whatsapp" style="font-size:36px;color: green"></i></a>
+     <a href="https://instagram.com/nasik_cl?utm_medium=copy_link"><i class="fa fa-instagram" style="font-size:36px color: #8a3ab9"></i></a>
+
+    </div>
+    <!--
+    <form id="submit-form" action="https://script.google.com/macros/s/AKfycbyTpIu90RoxLmQrd0hLWWm0G4ODOPMKA7-cEwvjPJDuas5GziRf7QJUxuwV042enGdvGQ/exec">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputName14">Name</label>
@@ -188,6 +196,7 @@
       <button type="submit" class="btn btn-primary">Submit</button>
        </div>
     </form>
+  -->
   </section>
 
 
@@ -223,5 +232,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+
+<!--
+<script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbyTpIu90RoxLmQrd0hLWWm0G4ODOPMKA7-cEwvjPJDuas5GziRf7QJUxuwV042enGdvGQ/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              window.location.href="https://nasikhcl.github.io/Nasikh_CL/"
+          },
+          error:function (err){
+              alert("Something Error")
+
+          }
+      })
+  })
+</script> -->
 </body>
 </html>
