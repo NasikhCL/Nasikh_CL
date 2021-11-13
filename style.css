@@ -29,7 +29,11 @@ header{
     width: 100%;
 }
 
+.ssl{
+    width: 10rem;
+    background: lightgray;
 
+}
 
 
 
@@ -37,4 +41,9 @@ header{
 
     background-position: 0 -100%;
    
+}
+
+.ssl-box{
+    width: 22rem; height: 13rem;
+    
 }
