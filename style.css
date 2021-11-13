@@ -1,10 +1,19 @@
 
 header{
     color: #0D98BA;
+    rgb(65, 119, 173) 50%);
 }
 
 .s1{
     background: lightcyan;
+
+    
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom,  #0D98BA, lightcyan 70%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;
+
 }
 
 .Res{
@@ -20,3 +29,12 @@ header{
     width: 100%;
 }
 
+
+
+
+
+.s1:hover {
+
+    background-position: 0 -100%;
+   
+}
