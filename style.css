@@ -47,3 +47,23 @@ header{
     width: 22rem; height: 13rem;
     
 }
+
+
+#pot {
+    bottom: 20rem;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+  }
+  @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 73%;
+    }
+    100% {
+      left: 1%;    
+    }
+  }
